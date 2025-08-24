@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>LK Uber Gear</name>
+  <packageId>LeutianKane.ubergear</packageId>
+  <author>LeutianKane</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies />
+ <loadAfter>
+    <li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+    <li>Ludeon.RimWorld.Odyssey</li>
+        <li>brrainz.harmony</li>
+        <li>LeutianKane.HumanPlus</li>
+  </loadAfter>
+  <description>Repository of Uber type gear that i will be adding over time to the game to fit my Human Plus XenoType.</description>
+</ModMetaData>
