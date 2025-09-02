@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ResearchProjectDef>
+    <defName>LKUberGear</defName>
+    <label>Uber gear research</label>
+    <tab>LKUberGear</tab>
+    <description>Unlocks beginning tiers of Uber gear.</description>
+    <baseCost>40000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Research into Uber gear</li>
+
+        <li>subject_story->traded Uber materials to desperate rimworlders</li>
+        <li>subject_story->learned the secrets of fabricating uber gear and died without revealing them</li>
+        <li>subject_story->balked at the extreme cost of crafting uber gear and chose a simpler lifestyle</li>
+
+        <li>subject_gerund->fabricating uber gear</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  
+
+</Defs>
