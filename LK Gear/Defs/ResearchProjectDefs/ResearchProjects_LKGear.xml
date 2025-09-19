@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ResearchProjectDef>
+    <defName>LKUberGear</defName>
+    <label>Ultimate weapon research</label>
+    <tab>LKUberGear</tab>
+    <description>Unlocks beginning tiers of Ultimate weapons.</description>
+    <baseCost>40000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Research into Ultimate gear</li>
+
+        <li>subject_story->traded Uber materials to desperate rimworlders</li>
+        <li>subject_story->learned the secrets of fabricating ultimate gear and died without revealing them</li>
+        <li>subject_story->balked at the extreme cost of crafting ultimate gear and chose a simpler lifestyle</li>
+
+        <li>subject_gerund->fabricating ultimate gear</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+<ResearchProjectDef>
+    <defName>LKUberArmor</defName>
+    <label>Ultimate Armor research</label>
+    <tab>LKUberGear</tab>
+    <description>Unlocks beginning tiers of Ultimate armor.</description>
+    <baseCost>40000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Research into Ultimate gear</li>
+
+        <li>subject_story->traded Uber materials to desperate rimworlders</li>
+        <li>subject_story->learned the secrets of fabricating ultimate gear and died without revealing them</li>
+        <li>subject_story->balked at the extreme cost of crafting ultimate gear and chose a simpler lifestyle</li>
+
+        <li>subject_gerund->fabricating ultimate gear</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+
+</Defs>
