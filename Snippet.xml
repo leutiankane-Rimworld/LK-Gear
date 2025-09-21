@@ -1,6 +1,6 @@
 <!--Useful Snippets of Code so i dont have to keep hunting them down-->
 
-<!--Adds MoveSpeed,MassCarryCapacity(map and caravan ),and Vacuum Resistance for Odyssey AND Save Our Ship 2-->
+<!--Adds MoveSpeed,Slave Suppresion,MassCarryCapacity(map and caravan ),and Vacuum Resistance for Odyssey AND Save Our Ship 2-->
 <equippedStatOffsets>
       <MoveSpeed>0.25</MoveSpeed>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
@@ -36,4 +36,5 @@
 		<disableRotation>true</disableRotation>
     <chargeFullyWhenMade>true</chargeFullyWhenMade>
 	</li>
+
     </comps>
