@@ -30,7 +30,7 @@
 		<showOnNeutralInCombat>true</showOnNeutralInCombat>
 		<shieldTexPath>Other/ShieldBubble</shieldTexPath>
 		<EnergyShieldRechargeRate>0.9</EnergyShieldRechargeRate>
-		<EnergyShieldEnergyMax>1000</EnergyShieldEnergyMax>
+		<EnergyShieldEnergyMax>250</EnergyShieldEnergyMax>
 		<minShieldSize>1.4</minShieldSize>
 		<maxShieldSize>1.8</maxShieldSize>
 		<disableRotation>true</disableRotation>
@@ -38,3 +38,4 @@
 	</li>
 
     </comps>
+
