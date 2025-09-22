@@ -9,7 +9,7 @@
      <HypoxiaResistance MayRequire="kentington.saveourship2">0.75</HypoxiaResistance>
      <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
      <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
-<equippedStatOffsets>
+</equippedStatOffsets>
 
 <!--make item stuffable with metal,leather,wood,stone or cloth types, Place anywhere in ThingDef before costStuffCount and costList-->
 <stuffCategories>   <!--This is what tells the game to allow using these types of materials to use to make the item out of.Can use any or all of these.-->
@@ -41,6 +41,7 @@
     <chargeFullyWhenMade>true</chargeFullyWhenMade>
 	</li>
     </comps>
+
 
 
 
