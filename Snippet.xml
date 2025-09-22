@@ -1,7 +1,7 @@
 <!--Useful Snippets of Code so i dont have to keep hunting them down-->
 
 <!--Adds MoveSpeed,Slave suppression,MassCarryCapacity(map and caravan ),and Vacuum Resistance for Odyssey AND Save Our Ship 2-->
-<equippedStatOffsets>  <!--either include all or any of these in existing equippedStatOffsets or use the tags to add if it doesnt exist-->
+<equippedStatOffsets>  <!--either include all or any of these in existing equippedStatOffsets or use the tags to add if it doesnt exist usually under statBases-->
       <MoveSpeed>0.25</MoveSpeed>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
@@ -41,6 +41,7 @@
     <chargeFullyWhenMade>true</chargeFullyWhenMade>
 	</li>
     </comps>
+
 
 
 
