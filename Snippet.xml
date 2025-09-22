@@ -1,7 +1,7 @@
 <!--Useful Snippets of Code so i dont have to keep hunting them down-->
 
-<!--Adds MoveSpeed,Slave Suppresion,MassCarryCapacity(map and caravan ),and Vacuum Resistance for Odyssey AND Save Our Ship 2-->
-<equippedStatOffsets>
+<!--Adds MoveSpeed,Slave suppression,MassCarryCapacity(map and caravan ),and Vacuum Resistance for Odyssey AND Save Our Ship 2-->
+<equippedStatOffsets>  <!--either include all or any of these in existing equippedStatOffsets or use the tags to add if it doesnt exist-->
       <MoveSpeed>0.25</MoveSpeed>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
@@ -10,16 +10,20 @@
       <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
       <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
     </equippedStatOffsets>
-<!--make item stuffable with metal,leather,wood or cloth types-->
-<stuffCategories>
-<li>Metallic</li>
-<li>Leathery</li>
-<li>Woody</li>
-<li>Fabric</li>
+
+<!--make item stuffable with metal,leather,wood,stone or cloth types, Place anywhere in ThingDef before costStuffCount and costList-->
+<stuffCategories>   <!--This is what tells the game to allow using these types of materials to use to make the item out of.Can use any or all of these.-->
+<li>Metallic</li>   <!--Adds Any metal type as a choice for the item-->
+<li>Leathery</li>   <!--Adds Any Leather type as a choice for the item-->
+<li>Woody</li>      <!--Adds Any Wood type as a choice for the item-->
+<li>Fabric</li>     <!--Adds Any Cloth type as a choice for the item-->
+<li>Stony</li>      <!--Adds Any Stone type as a choice for the item-->
 </stuffCategories>
-<costStuffCount>100</costStuffCount>
-<!--VEF Shield bubble (ranged shield belt,Siegebreaker armor)add to apparel or pawns-->
+<costStuffCount>100</costStuffCount>  <!--Tells how much stuff to use from whatever stuffCategory you chose to use place above costList in ThingDef of item.-->
+
+<!--Must have for shield bubble to work place above comps in ThingDef-->
 <tickerType>Normal</tickerType>
+<!--VEF Shield bubble (ranged shield belt,Siegebreaker armor)add to apparel or pawns,either add to existing comps or add after /apparel tag if comps doesnt exist.-->
  <comps>
     <li Class="VEF.Apparels.CompProperties_ShieldBubble" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 		<compClass>VEF.Apparels.CompShieldBubble</compClass>
@@ -30,12 +34,13 @@
 		<showOnNeutralInCombat>true</showOnNeutralInCombat>
 		<shieldTexPath>Other/ShieldBubble</shieldTexPath>
 		<EnergyShieldRechargeRate>0.9</EnergyShieldRechargeRate>
-		<EnergyShieldEnergyMax>250</EnergyShieldEnergyMax>
+		<EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
 		<minShieldSize>1.4</minShieldSize>
 		<maxShieldSize>1.8</maxShieldSize>
 		<disableRotation>true</disableRotation>
     <chargeFullyWhenMade>true</chargeFullyWhenMade>
 	</li>
-
     </comps>
+
+
 
