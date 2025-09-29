@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <!--Hats/hoods-->
@@ -28,6 +28,9 @@
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
+    <thingCategories>
+      <li>LK_Category_Ultimate_HeadgearLight</li>
+    </thingCategories>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
@@ -93,6 +96,9 @@
     </graphicData>
     <costStuffCount>200</costStuffCount>
     <uiIconScale>1.25</uiIconScale>
+    <thingCategories>
+      <li>LK_Category_Ultimate_HeadgearLight</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>1800</WorkToMake>
       <Mass>0.14</Mass>
@@ -105,6 +111,8 @@
       <SocialImpact>0.25</SocialImpact>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.25</SlaveSuppressionOffset>
       <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+      <PainShockThreshold>0.05</PainShockThreshold>
+	    <ForagedNutritionPerDay>0.25</ForagedNutritionPerDay>
     </equippedStatOffsets>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -124,8 +132,12 @@
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/Hood/Hood</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
     </graphicData>
     <uiIconScale>1.15</uiIconScale>
+    <thingCategories>
+      <li>LK_Category_Ultimate_HeadgearLight</li>
+    </thingCategories>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <WorkToMake>6000</WorkToMake>
@@ -138,6 +150,8 @@
     <equippedStatOffsets>
       <SocialImpact>0.4</SocialImpact>
       <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+      <PainShockThreshold>0.05</PainShockThreshold>
+	    <ForagedNutritionPerDay>0.25</ForagedNutritionPerDay>
     </equippedStatOffsets>
     <costStuffCount>500</costStuffCount>
     <stuffCategories>
@@ -148,8 +162,22 @@
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Hood/Hood</wornGraphicPath>
       <bodyPartGroups>
-        <li>UpperHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
+      <drawData>
+	    <dataNorth>
+          <layer>100</layer>
+        </dataNorth>	    
+		<dataSouth>
+          <layer>100</layer>
+        </dataSouth>		
+		<dataEast>
+          <layer>100</layer>
+        </dataEast>		
+		<dataWest>
+          <layer>100</layer> <!-- 80 on test works too, but back does not render behind-->
+        </dataWest>
+	</drawData>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -194,6 +222,9 @@
       <li>Clothing</li>
       <li>Armor</li>
     </tradeTags>
+    <thingCategories>
+      <li>LK_Category_Ultimate_HeadgearLight</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>3200</WorkToMake>
       <MaxHitPoints>1000</MaxHitPoints>
@@ -257,6 +288,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
+    <thingCategories>
+      <li>LK_Category_Ultimate_HeadgearLight</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>8000</WorkToMake>
       <MaxHitPoints>1200</MaxHitPoints>
@@ -343,6 +377,9 @@
       <li>Armor</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Headgear</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>21000</WorkToMake>
       <MaxHitPoints>1500</MaxHitPoints>
@@ -457,6 +494,9 @@
       <li>HiTechArmor</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Headgear</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>15750</WorkToMake>
       <MaxHitPoints>1200</MaxHitPoints>
@@ -578,7 +618,7 @@
       <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>ApparelMisc</li>
+      <li>LK_Category_Ultimate_ArmorLight</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
@@ -592,6 +632,8 @@
     <equippedStatOffsets>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.15</SlaveSuppressionOffset>
       <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+      <PainShockThreshold>0.05</PainShockThreshold>
+	    <ForagedNutritionPerDay>0.25</ForagedNutritionPerDay>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -599,7 +641,6 @@
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
-        <li>Legs</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</wornGraphicPath>
       <layers>
@@ -662,6 +703,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <generateCommonality>2</generateCommonality>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Armor</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>3400</MaxHitPoints>
@@ -683,9 +727,6 @@
       <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
       <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
     <tradeTags>
       <li>HiTechArmor</li>
       <li>Armor</li>
@@ -819,8 +860,8 @@
       <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
       <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>ApparelArmor</li>
+     <thingCategories>
+      <li>LK_Category_Ultimate_Armor</li>
     </thingCategories>
     <stuffCategories>
       <li>Metallic</li>
