@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
@@ -13,6 +13,9 @@
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Ultra</techLevel>
     <costStuffCount>500</costStuffCount>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Melee</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>1.25</Mass>
@@ -80,6 +83,9 @@
       <li>MedievalMeleeDecent</li>
       <li>LK_Category_Ultimate_Melee</li>
     </weaponTags>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Melee</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>12000</WorkToMake>
       <Mass>0.85</Mass>
@@ -148,6 +154,9 @@
     </weaponTags>
     <costStuffCount>1000</costStuffCount>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Melee</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
       <Mass>2</Mass>
