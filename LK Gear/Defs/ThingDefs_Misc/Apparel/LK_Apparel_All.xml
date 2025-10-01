@@ -950,5 +950,39 @@
       <displayPriority>115</displayPriority>
     </recipeMaker>
   </ThingDef>
+	<!--Catapharact armor-->
+
+  <ThingDef ParentName="LK_ApparelArmorCataphractBase">
+    <defName>LK_Apparel_ArmorCataphract</defName>
+    <label>ultimate cataphract armor</label>
+    <description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <tags>
+        <li>LK_Category_Ultimate_Armor_Royal</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <displayPriority>125</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="LK_ApparelArmorHelmetCataphractBase">
+    <defName>LK_Apparel_ArmorHelmetCataphract</defName>
+    <label>ultimate cataphract helmet</label>
+    <description>A heavily-armored high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+    <apparel>
+      <tags>
+        <li>LK_Category_Ultimate_Headgear_Royal</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <displayPriority>120</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  
   
 </Defs>
+
