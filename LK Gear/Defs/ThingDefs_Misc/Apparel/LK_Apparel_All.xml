@@ -115,6 +115,9 @@
 	    <ForagedNutritionPerDay>0.25</ForagedNutritionPerDay>
     </equippedStatOffsets>
     <apparel>
+    <tags>
+        <li>LK_Category_Ultimate_HeadgearLight</li>
+      </tags>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BowlerHat/BowlerHat</wornGraphicPath>
@@ -314,6 +317,9 @@
       <Plasteel>100</Plasteel>
     </costList>
     <apparel>
+    <tags>
+        <li>LK_Category_Ultimate_HeadgearLight</li>
+      </tags>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -322,9 +328,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <tags>
-        <li>LK_Category_Ultimate_Headgear</li>
-      </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
@@ -950,7 +953,7 @@
       <displayPriority>115</displayPriority>
     </recipeMaker>
   </ThingDef>
-	<!--Catapharact armor-->
+  <!--Catapharact armor-->
 
   <ThingDef ParentName="LK_ApparelArmorCataphractBase">
     <defName>LK_Apparel_ArmorCataphract</defName>
@@ -983,6 +986,4 @@
     </recipeMaker>
   </ThingDef>
   
-  
 </Defs>
-
