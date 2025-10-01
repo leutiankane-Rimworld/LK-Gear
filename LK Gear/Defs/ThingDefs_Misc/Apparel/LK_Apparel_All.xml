@@ -85,7 +85,7 @@
     
   </ThingDef>
 
-  <ThingDef ParentName="LK_Apparel_CowboyHat">
+  <ThingDef ParentName="CowboyHat">
     <defName>LK_Apparel_BowlerHat</defName>
     <label>ultimate bowler hat</label>
     <description>A good-looking hat which projects a slightly urban, money-loving style. Improves social impact.</description>
@@ -981,4 +981,5 @@
   </ThingDef>
   
 </Defs>
+
 
