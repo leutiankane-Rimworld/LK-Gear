@@ -85,7 +85,7 @@
     
   </ThingDef>
 
-  <ThingDef ParentName="CowboyHat">
+  <ThingDef ParentName="LK_Apparel_CowboyHat">
     <defName>LK_Apparel_BowlerHat</defName>
     <label>ultimate bowler hat</label>
     <description>A good-looking hat which projects a slightly urban, money-loving style. Improves social impact.</description>
@@ -96,9 +96,6 @@
     </graphicData>
     <costStuffCount>200</costStuffCount>
     <uiIconScale>1.25</uiIconScale>
-    <thingCategories>
-      <li>LK_Category_Ultimate_HeadgearLight</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>1800</WorkToMake>
       <Mass>0.14</Mass>
@@ -115,9 +112,6 @@
 	    <ForagedNutritionPerDay>0.25</ForagedNutritionPerDay>
     </equippedStatOffsets>
     <apparel>
-    <tags>
-        <li>LK_Category_Ultimate_HeadgearLight</li>
-      </tags>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BowlerHat/BowlerHat</wornGraphicPath>
@@ -987,3 +981,4 @@
   </ThingDef>
   
 </Defs>
+
