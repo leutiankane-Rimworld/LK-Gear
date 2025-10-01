@@ -20,10 +20,23 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_Armor_Royal</defName>
+        <label>Ultimate</label>
+        <parent>ApparelArmor</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
         <defName>LK_Category_Ultimate_Headgear</defName>
         <label>Ultimate</label>
         <parent>ArmorHeadgear</parent>
     </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_Headgear_Royal</defName>
+        <label>Ultimate</label>
+        <parent>ArmorHeadgear</parent>
+    </ThingCategoryDef>
+
      <ThingCategoryDef>
         <defName>LK_Category_Ultimate_ArmorLight</defName>
         <label>Ultimate</label>
