@@ -69,7 +69,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" /> 
   </ThingDef>
   
-  <ThingDef ParentName="LKHatMakeableBase" Name="LKCowboyHat">
+  <ThingDef Name="LKCowboyHat" ParentName="HatMakeableBase" Abstract="True">
     <possessionCount>1</possessionCount>
     <recipeMaker>
       <researchPrerequisite>LKUberArmor</researchPrerequisite>
@@ -139,14 +139,22 @@
     </colorGenerator>
   </ThingDef>
 
-  <ThingDef Name="LKBowlerhat" ParentName="LKCowboyHat" Abstract="True">
+  <ThingDef Name="LKBowlerhat" ParentName="HatMakeableBase" Abstract="True">
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/BowlerHat/BowlerHat</texPath>
       <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
-    <costStuffCount>200</costStuffCount>
     <uiIconScale>1.25</uiIconScale>
+    <recipeMaker>
+      <researchPrerequisite>LKUberArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
     <thingCategories>
       <li>LK_Category_Ultimate_HeadgearLight</li>
     </thingCategories>
@@ -165,11 +173,41 @@
       <PainShockThreshold>0.05</PainShockThreshold>
 	    <ForagedNutritionPerDay>0.25</ForagedNutritionPerDay>
     </equippedStatOffsets>
+    <costStuffCount>250</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BowlerHat/BowlerHat</wornGraphicPath>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
     </apparel>
+     <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.54,0.15,1)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(0.9,0.6,0.18,1)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(0.9,0.42,0.23,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
   </ThingDef>
 
   <!-- ================================== Helmets ====================================-->
@@ -1047,4 +1085,5 @@
     </thingSetMakerTags>
   </ThingDef>
   
+
 </Defs>
