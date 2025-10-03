@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+  <!--Neolithic Ultimate-->
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>LK_MeleeWeapon_Mace</defName>
     <label>ultimate mace</label>
@@ -65,7 +65,7 @@
       </li>
     </tools>
   </ThingDef>
-
+<!--Medieval Ultimate-->
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>LK_MeleeWeapon_Gladius</defName>
     <label>ultimate gladius</label>
@@ -186,6 +186,7 @@
         </capacities>
         <power>33</power>
         <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
       </li>
       <li>
         <label>edge</label>
@@ -194,6 +195,7 @@
         </capacities>
         <power>33</power>
         <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
       </li>
     </tools>
     <recipeMaker>
@@ -207,6 +209,251 @@
       <displayPriority>420</displayPriority>
     </recipeMaker>
   </ThingDef>
-
+<!--ULtraTech Ultimate-->
+<ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>LK_MeleeWeapon_MonoSword</defName>
+    <label>ultimate monosword</label>
+    <description>A crystal-metallic longsword infused with mechanites that maintain a mono-molecular cutting edge. It cuts through even thick armor with ease, and its light weight permits fast attacks.The handle carries an EMP charge for electronics.</description>
+    <soundInteract>Interact_MonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <smeltable>true</smeltable>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+     <thingCategories>
+      <li>LK_Category_Ultimate_Melee</li>
+    </thingCategories>
+    <weaponTags>
+      <li>UltratechMelee</li>
+      <li>LK_Category_Ultimate_Melee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+     <equippedStatOffsets>
+     <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>32</power>
+        <cooldownTime>1.6</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>9</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>55</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>55</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+     <recipeMaker>
+      <researchPrerequisite>LKUberGear</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>1500</costStuffCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>LK_MeleeWeapon_Zeushammer</defName>
+    <label>ultimate zeushammer</label>
+    <description>A warhammer with an embedded EMP capacitor. Upon impact, it blasts the target with an EMP burst in addition to the physical damage.</description>
+    <soundInteract>Interact_ZeusHammer</soundInteract>
+    <meleeHitSound>MeleeHit_ZeusHammer</meleeHitSound>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <smeltable>true</smeltable>
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/ZeusHammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+     <thingCategories>
+      <li>LK_Category_Ultimate_Melee</li>
+    </thingCategories>
+    <weaponTags>
+      <li>UltratechMelee</li>
+      <li>LK_Category_Ultimate_Melee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+     <equippedStatOffsets>
+     <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>51</power>
+        <cooldownTime>3</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>19</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LKUberGear</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>1500</costStuffCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="MeleeWeaponUltratech">
+    <defName>LK_MeleeWeapon_PlasmaSword</defName>
+    <label>ultimate plasmasword</label>
+    <description>A metal-cored sword with a cutting edge. Plasma is wrapped around the core, held in place by an energy field. Targets are both sliced by the metal core, as well as burned or ignited by the plasma sheath.</description>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <relicChance>3</relicChance>
+    <smeltable>true</smeltable>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/PlasmaSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Melee</li>
+    </thingCategories>
+    <weaponTags>
+      <li>UltratechMelee</li>
+      <li>LK_Category_Ultimate_Melee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+     <equippedStatOffsets>
+     <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>32</power>
+        <cooldownTime>2</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>9</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>31</power>
+        <cooldownTime>2.6</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>20</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>51</power>
+        <cooldownTime>2.6</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>20</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LKUberGear</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>1500</costStuffCount>
+  </ThingDef>
   
 </Defs>
