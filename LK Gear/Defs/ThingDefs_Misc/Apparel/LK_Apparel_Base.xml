@@ -104,6 +104,7 @@
         </li>
       </options>
     </colorGenerator>
+	  <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Biocodable"/>
       <li Class="VEF.Apparels.CompProperties_ShieldBubble" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
@@ -114,7 +115,7 @@
 		<showOnHostiles>true</showOnHostiles>
 		<showOnNeutralInCombat>true</showOnNeutralInCombat>
 		<shieldTexPath>Other/ShieldBubble</shieldTexPath>
-		<EnergyShieldRechargeRate>0.9</EnergyShieldRechargeRate>
+		<EnergyShieldRechargeRate>0.4</EnergyShieldRechargeRate>
 		<EnergyShieldEnergyMax>1000</EnergyShieldEnergyMax>
 		<minShieldSize>1.4</minShieldSize>
 		<maxShieldSize>1.8</maxShieldSize>
@@ -224,3 +225,4 @@
   </ThingDef>
   
 </Defs>
+
