@@ -3,6 +3,7 @@
   <name>LK Ultimate Armory</name>
   <packageId>LeutianKane.ubergear</packageId>
   <author>LeutianKane</author>
+  <modVersion>2.0.1.0</modVersion>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
