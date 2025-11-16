@@ -52,10 +52,11 @@
     <!--Medicines-->
     <ThingCategoryDef>
 		<defName>LK_Category_Medicine</defName>
-		<label>medicine Ultimate Armory</label>
+		<label>ultimate drugs and medicines</label>
 		<parent>Medicine</parent>
 		<iconPath>UI/Icons/ThingCategories/Medicine</iconPath>
 	</ThingCategoryDef>
 </Defs>
+
 
 
