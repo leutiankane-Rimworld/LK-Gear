@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--Weapons-->
+    <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_Weapons</defName>
+        <label>Ultimate Ranged</label>
+        <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+   
+    <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_Melee</defName>
+        <label>Ultimate Melee</label>
+        <parent>WeaponsMelee</parent>
+    </ThingCategoryDef>
+<!--Armor-->
+     <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_Armor</defName>
+        <label>Ultimate Armor</label>
+        <parent>ApparelArmor</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_Armor_Royal</defName>
+        <label>Ultimate Royal Armor</label>
+        <parent>ApparelArmor</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_Headgear</defName>
+        <label>Ultimate Helms</label>
+        <parent>ArmorHeadgear</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_Headgear_Royal</defName>
+        <label>Ultimate Royal Helms</label>
+        <parent>ArmorHeadgear</parent>
+    </ThingCategoryDef>
+
+     <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_ArmorLight</defName>
+        <label>Ultimate Light Armor</label>
+        <parent>ApparelArmor</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>LK_Category_Ultimate_HeadgearLight</defName>
+        <label>Ultimate Light Helms</label>
+        <parent>ArmorHeadgear</parent>
+    </ThingCategoryDef>
+    <!--Medicines-->
+    <ThingCategoryDef>
+		<defName>LK_Category_Medicine</defName>
+		<label>medicine Ultimate Armory</label>
+		<parent>Medicine</parent>
+		<iconPath>UI/Icons/ThingCategories/Medicine</iconPath>
+	</ThingCategoryDef>
+</Defs>
+
+
