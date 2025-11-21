@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="MedicineBase">
+		<defName>LK_MedicineI</defName>
+		<label>ultimate medicine I</label>
+		<description>A small pouch of medical tools of an advanced variety produced solely by the Evolved Humanoid Race, many of the tools are equipped with holographic projectors which allow even novitiate surgeons to perform advanced techniques with relative ease.</description>
+		<possessionCount>3</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Resource/Medicine/MedicineUltratech</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Archotech</techLevel>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.3125</Mass>
+			<Flammability>0.0</Flammability>
+			<MedicalPotency>8.4</MedicalPotency>
+			<MedicalQualityMax>8.3875</MedicalQualityMax>
+			<DeteriorationRate>0.1</DeteriorationRate>
+		
+			<RoyalFavorValue>0.05</RoyalFavorValue></statBases>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>LK_Medicine_I</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<costList>
+			<MedicineUltratech>10</MedicineUltratech>
+			<Neutroamine>100</Neutroamine>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>DrugLab</li>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<!-- TODO -->
+			<researchPrerequisite>LKUberDrugs</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>18</Crafting>
+				<Intellectual>18</Intellectual>
+			</skillRequirements>
+			<bulkRecipeCount>6</bulkRecipeCount>
+			<displayPriority>2000</displayPriority>
+		</recipeMaker>
+		<thingCategories>
+			<li>LK_Category_Medicine</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>
