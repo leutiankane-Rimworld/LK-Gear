@@ -9,4 +9,4 @@
 
 ---Added Custom Parents for those items that didnt have them.
 
----See Changelog.txt in the About folder for full list of updates to this mod beyond what is listed here.
+---See [Changelog.txt](https://github.com/leutiankane-Rimworld/LK-Gear/blob/main/LK%20Gear/About/ChangeLog.txt) in the About folder for full list of updates to this mod beyond what is listed here.
