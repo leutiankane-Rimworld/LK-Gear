@@ -1,0 +1,10 @@
+# Changelog for LK Ultimate Armory
+# Author is LeutianKane
+2.0.1.6 ---Fixed SOS 2 compatability to All spacer type armors.
+2.0.1.5 ---Adds Ultimate Healer mech serum crafted in drug lab or machine table after researching Ultimate medical research.Also added a Patch to make it compatible with Healer mech Serum Choice mod.
+2.0.1.4 ---Minor Bug fixes.
+2.0.1.3 ---changed name of Ultimate duster to ultimate cloak and updated worn graphics for it and the ultimate hood.
+2.0.1.2 ---added ultimate medicine archotech medicine crafted at the machineing table or drug lab that is way beyond glitterworld in terms of potency and cost.
+2.0.1.1 ---reduced recharge rate of shield bubbles and lowered some shield values on power armor, added stuff effect multipliers to armor/clothing for what its made from.
+
+2.0.1.0 ---Added Versioning to mod to use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2161604688]Auto Changenote[/url] mod.
