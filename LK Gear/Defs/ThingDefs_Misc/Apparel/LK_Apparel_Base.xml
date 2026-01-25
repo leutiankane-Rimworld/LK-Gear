@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+  
+  
+  
+  <!-- Cataphract armor base -->
+  
+  <ThingDef Name="LK_ApparelArmorCataphractBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <techLevel>Ultra</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>LKUberArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.0</Flammability>
+      <ArmorRating_Sharp>3.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.6</ArmorRating_Heat>
+      <Insulation_Cold>70</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EnergyShieldRechargeRate>0.09</EnergyShieldRechargeRate>
+		  <EnergyShieldEnergyMax>10.0</EnergyShieldEnergyMax>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    
+    <equippedStatOffsets>
+      <MoveSpeed>0.5</MoveSpeed>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">0.75</HypoxiaResistance>
+      <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+      <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
+    </equippedStatOffsets>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Armor_Royal</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>400</costStuffCount>
+    <costList>
+      <ComponentSpacer>60</ComponentSpacer>
+      <Plasteel>1500</Plasteel>
+      <Uranium>500</Uranium>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+      <li Class="VEF.Apparels.CompProperties_ShieldBubble" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<compClass>VEF.Apparels.CompShieldBubble</compClass>
+		<blockRangedAttack>true</blockRangedAttack>
+		<blockMeleeAttack>true</blockMeleeAttack>
+		<showWhenDrafted>true</showWhenDrafted>
+		<showOnHostiles>true</showOnHostiles>
+		<showOnNeutralInCombat>true</showOnNeutralInCombat>
+		<shieldTexPath>Other/ShieldBubble</shieldTexPath>
+		
+		<minShieldSize>1.4</minShieldSize>
+		<maxShieldSize>1.8</maxShieldSize>
+		<disableRotation>true</disableRotation>
+    <chargeFullyWhenMade>true</chargeFullyWhenMade>
+	  </li>
+    
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef Name="LK_ApparelArmorHelmetCataphractBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+    <techLevel>Ultra</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>LKUberArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CataphractArmorHelmet/CataphractHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
+    <thingCategories>
+      <li>LK_Category_Ultimate_Headgear_Royal</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>26250</WorkToMake>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0.0</Flammability>
+      <ArmorRating_Sharp>2.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.6</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+     <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.65</VacuumResistance>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">0.75</HypoxiaResistance>
+      <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+      <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
+    </equippedStatOffsets>
+    
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>400</costStuffCount>
+    <costList>
+      <ComponentSpacer>10</ComponentSpacer>
+      <Plasteel>500</Plasteel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CataphractArmorHelmet/CataphractHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10.1</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+      <li Class="SaveOurShip2.CompEVA" MayRequire="kentington.saveourship2">
+      <compClass>SaveOurShip2.CompEVA</compClass>
+     </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  <!--how to make an item cause a hediff when equipped so you can do pseudo traits-->
+  <!--<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>TortureCrown</hediff>
+        <part>Head</part>
+      </li>
+    </comps>-->
+</Defs>
