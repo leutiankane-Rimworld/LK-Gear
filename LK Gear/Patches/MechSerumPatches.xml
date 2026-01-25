@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--Adds Healer Mech Serum Choice menu to Ultimate Healer mech serum-->
+    <Operation Class="PatchOperationFindMod">
+	 <mods>
+	 <li>Healer Mech Serum Choice</li>
+	 </mods>
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="LK_MechSerumHealer"]/comps/li[@Class="CompProperties_Usable"]</xpath>
+		<value>
+			<compClass>HMSChoice.CompUsable_FixHealthConditionChoice</compClass>
+		</value>
+		</match>
+	</Operation>
+	 <Operation Class="PatchOperationFindMod">
+	 <mods>
+	 <li>Healer Mech Serum Choice</li>
+	 </mods>
+	<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="LK_MechSerumHealer"]/comps/li[@Class="CompProperties_UseEffect" and compClass="CompUseEffect_FixWorstHealthCondition"]/compClass</xpath>
+		<value>
+			<compClass>HMSChoice.CompUseEffect_FixHealthConditionChoice</compClass>
+		</value>
+		</match>
+	</Operation>
+
+</Patch>
