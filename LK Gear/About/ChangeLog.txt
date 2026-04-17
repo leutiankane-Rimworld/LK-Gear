@@ -1,0 +1,16 @@
+# Changelog for LK Ultimate Armory
+# Author is LeutianKane
+2.0.2.2 ---Added Ultimate Deathrest capacity serum craftable at Drug Lab and machining table, increases deathrest capacity by 10 instead of 1.
+2.0.2.1 ---Final Fix for Ultimate healer mech serum to be used in surgeries.
+2.0.2.0 ---Fixed Ultimate healer mech serum to be able to be used in surgeries.
+2.0.1.9 ---Added Ultimate Beam Repeater and updated bullet defs for ultimate charge rifle and minigun.
+2.0.1.8 ---Updated some UltraTech Weapons to be more on par with Beyond our Reach Kwazaari longswords power, updated Catapharact armor to be on par with Mandalorian Armor's stats from Outer Rim.
+2.0.1.7 --- Fix for Comp Error from Save our Ship 2.
+2.0.1.6 ---Fixed SOS 2 compatability to All spacer type armors.
+2.0.1.5 ---Adds Ultimate Healer mech serum crafted in drug lab or machine table after researching Ultimate medical research.Also added a Patch to make it compatible with Healer mech Serum Choice mod.
+2.0.1.4 ---Minor Bug fixes.
+2.0.1.3 ---changed name of Ultimate duster to ultimate cloak and updated worn graphics for it and the ultimate hood.
+2.0.1.2 ---added ultimate medicine archotech medicine crafted at the machineing table or drug lab that is way beyond glitterworld in terms of potency and cost.
+2.0.1.1 ---reduced recharge rate of shield bubbles and lowered some shield values on power armor, added stuff effect multipliers to armor/clothing for what its made from.
+
+2.0.1.0 ---Added Versioning to mod to use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2161604688]Auto Changenote[/url] mod.
